@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.main {
+    margin: auto;
+    width: 650px;
+}
+
+.topimg {
+    position: relative;
+}
+.logo{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100px;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: black;
+}
+
+li {
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: aliceblue;
+    height: 70px;
+    background: #8d2f28;
+    width: 20%;
+}
+
+li:hover {
+    background: url("img/rings.png") no-repeat right bottom;
+}
+
+.redtext {
+    color: #8e0d05;
+    font-size: 1.5em;
+}
+
+.cont {
+    color: #8e0d05;
+}
+
+.botContainer {
+    display: flex;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    margin: 50px 0px;
+}
+.spacer {
+    width: 100%;
+    height: 50px;
+}
+.halfwidth {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+    justify-content:space-between;
+    height:208px;
+}
+
+.imgframe {
+    width: 25%;
+    display:flex;
+    flex-direction: column;
+}
+
+.imgframe>img{
+    width: 90%;
+    height:190px;
+    object-fit: cover;
+}
+
+.noresize>img {
+   height: 70%;
+    
+}
+
+img {
+    width: 100%;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+}

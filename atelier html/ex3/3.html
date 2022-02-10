@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <title>Formulaire</title>
+</head>
+<style>
+    div {
+        margin: auto;
+        width: 300px
+    }
+</style>
+<body>
+<h1 align="center">Inscription en licence</h1>
+<form action="4.html">
+    <fieldset>
+        <legend align="center">Informations Personelles</legend>
+        <div>
+            <label for="nom">Votre Nom</label> 
+            <input id="nom" type="text" placeholder="Vote Nom?"><br>
+            <label for="pnom">Votre Prenom </label>
+            <input id="pnom" type="text" placeholder="Votre Prenom?"><br>
+            <label for="age">Votre Age</label>
+            <input id="age" type="number" placeholder="Votre Age?"><br>
+            <label for="adresse">Votre Adresse</label>
+            <textarea id="adresse" rows="7" cols="50" placeholder="Adresse"></textarea><br>
+            <label for="ddn">Date de Naissance</label>
+            <input id="ddn" type="date"><br>
+            <label for="pwd">Mot de passe</label>
+            <input id="pwd" type="password" placeholder="" required><br>
+            <label for="rpwd">Retaper votre mdp</label>
+            <input id="rpwd" type="password" placeholder="" required><br>
+            <label for="email">Votre email</label>
+            <input id="email" type="email" placeholder="Email"><br>
+            <label for="url">Url de l'etudiant</label>
+            <input id="url" type="url" placeholder="Url"><br>
+    </fieldset>
+    <fieldset>
+        <legend align="center">Gestion des grps des options</legend>
+        <div>Votre grp 
+            <input type="radio" name="grp" >Grp1
+            <input type="radio" name="grp">Grp2
+            <input type="radio" name="grp">Grp3
+            <br>
+            Num de carte Etudiant
+            <input type="text" placeholder="Votre num de Carte "><br>
+            Choisissez les options que vous desirez 
+            <select size="4">
+                <option>option1
+                <option>option2
+                <option>option3
+                <option>option4
+            </select>
+            <br>
+            <label for="verif">Verification</label>
+            <input type="text" name="verif" id="verif" required pattern="[INSAT0-9]{4}" title="4 caracteres du mot INSAT avec un chiffre 0-9">
+        </div>
+    </fieldset>
+    <div>
+       <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+    </div>
+</form>
+</body>
+</html>
